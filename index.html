@@ -6,38 +6,63 @@
   <title>Portafolio - Oscar Efraín Guzmán Álvarez</title>
   <style>
     * { margin: 0; padding: 0; box-sizing: border-box; }
-    body { font-family: 'Segoe UI', sans-serif; background: #0f0f0f; color: #f0f0f0; }
+    body { font-family: 'Segoe UI', sans-serif; background: #0a0f1e; color: #f0f0f0; }
     header {
-      background: linear-gradient(135deg, #1a1a2e, #16213e);
+      background: linear-gradient(135deg, #0d1b2a, #1b3a5c);
       text-align: center;
-      padding: 60px 20px;
-      border-bottom: 3px solid #e94560;
+      padding: 50px 20px 40px;
+      border-bottom: 3px solid #4a9edd;
     }
-    header h1 { font-size: 2.5rem; color: #e94560; }
-    header p { font-size: 1.1rem; color: #aaa; margin-top: 8px; }
+    .foto-perfil {
+      width: 140px;
+      height: 140px;
+      border-radius: 50%;
+      object-fit: cover;
+      border: 4px solid #4a9edd;
+      margin-bottom: 15px;
+    }
+    header h1 { font-size: 2.5rem; color: #4a9edd; }
+    header p { font-size: 1rem; color: #aac4e0; margin-top: 6px; }
     nav {
       display: flex;
       justify-content: center;
-      gap: 30px;
-      padding: 18px;
-      background: #16213e;
+      gap: 25px;
+      padding: 16px;
+      background: #0d1b2a;
       flex-wrap: wrap;
     }
-    nav a { color: #e94560; text-decoration: none; font-weight: bold; }
+    nav a { color: #4a9edd; text-decoration: none; font-weight: bold; font-size: 0.95rem; }
     nav a:hover { text-decoration: underline; }
     section { max-width: 900px; margin: 40px auto; padding: 0 20px; }
     section h2 {
       font-size: 1.8rem;
-      color: #e94560;
+      color: #4a9edd;
       margin-bottom: 15px;
-      border-left: 4px solid #e94560;
+      border-left: 4px solid #4a9edd;
       padding-left: 10px;
     }
     .sobre-mi p { color: #ccc; line-height: 1.9; font-size: 1rem; }
+    .datos-personales {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 15px;
+      margin-top: 15px;
+    }
+    .dato {
+      background: #1b3a5c;
+      border-radius: 10px;
+      padding: 12px 18px;
+      color: #aac4e0;
+      font-size: 0.95rem;
+      flex: 1;
+      min-width: 180px;
+    }
+    .dato span { color: #4a9edd; font-weight: bold; display: block; margin-bottom: 4px; }
     .habilidades { display: flex; flex-wrap: wrap; gap: 12px; margin-top: 10px; }
     .habilidad {
-      background: #e94560;
-      color: white;
+      background: #1b3a5c;
+      color: #4a9edd;
+      border: 1px solid #4a9edd;
       padding: 8px 18px;
       border-radius: 20px;
       font-size: 0.9rem;
@@ -45,12 +70,12 @@
     }
     .experiencia { display: flex; flex-direction: column; gap: 18px; }
     .trabajo {
-      background: #1a1a2e;
-      border-left: 4px solid #e94560;
+      background: #0d1b2a;
+      border-left: 4px solid #4a9edd;
       border-radius: 10px;
       padding: 18px 22px;
     }
-    .trabajo h3 { color: #e94560; margin-bottom: 5px; }
+    .trabajo h3 { color: #4a9edd; margin-bottom: 5px; }
     .trabajo p { color: #aaa; font-size: 0.95rem; }
     .proyectos {
       display: grid;
@@ -58,28 +83,37 @@
       gap: 20px;
     }
     .proyecto {
-      background: #1a1a2e;
-      border: 1px solid #e94560;
+      background: #0d1b2a;
+      border: 1px solid #4a9edd;
       border-radius: 12px;
       padding: 20px;
     }
-    .proyecto h3 { color: #e94560; margin-bottom: 8px; }
+    .proyecto h3 { color: #4a9edd; margin-bottom: 8px; }
     .proyecto p { color: #aaa; font-size: 0.9rem; }
+    .pasatiempos { display: flex; flex-wrap: wrap; gap: 12px; margin-top: 10px; }
+    .pasatiempo {
+      background: #1b3a5c;
+      color: #aac4e0;
+      padding: 10px 20px;
+      border-radius: 10px;
+      font-size: 0.95rem;
+    }
     .contacto p { color: #ccc; line-height: 2.2; font-size: 1rem; }
-    .contacto a { color: #e94560; }
+    .contacto a { color: #4a9edd; }
     footer {
       text-align: center;
       padding: 20px;
-      color: #555;
+      color: #445;
       font-size: 0.85rem;
       margin-top: 40px;
-      border-top: 1px solid #222;
+      border-top: 1px solid #1b3a5c;
     }
   </style>
 </head>
 <body>
 
   <header>
+    <img src="foto.jpg.jpeg" alt="Oscar Efraín Guzmán Álvarez" class="foto-perfil"/>
     <h1>Oscar Efraín Guzmán Álvarez</h1>
     <p>Estudiante de Licenciatura en Informática · Universidad Modular Abierta Regional San Miguel</p>
   </header>
@@ -89,20 +123,26 @@
     <a href="#habilidades">Habilidades</a>
     <a href="#experiencia">Experiencia</a>
     <a href="#proyectos">Proyectos</a>
+    <a href="#pasatiempos">Pasatiempos</a>
     <a href="#contacto">Contacto</a>
   </nav>
 
   <section id="sobre-mi" class="sobre-mi">
     <h2>Sobre mí</h2>
     <p>
-      Hola, mi nombre es Oscar Efraín Guzmán Álvarez. Me gradué de bachillerato en el año 2020
-      y actualmente estoy cursando la Licenciatura en Informática en la Universidad Modular Abierta,
-      Regional San Miguel. Me apasiona la tecnología, el desarrollo web y las bases de datos.
-      A lo largo de mi trayectoria he combinado mis estudios con experiencia laboral en diferentes
-      sectores, lo que me ha permitido desarrollar habilidades de responsabilidad, atención al cliente
-      y trabajo en equipo. Estoy comprometido con seguir creciendo profesionalmente en el área de
-      la informática y el desarrollo de software.
+      Hola, mi nombre es Oscar Efraín Guzmán Álvarez, tengo 24 años y soy estudiante de
+      Licenciatura en Informática en la Universidad Modular Abierta, Regional San Miguel.
+      Me gradué de bachillerato en el año 2020 y desde entonces he combinado mis estudios
+      con experiencia laboral en diferentes sectores. Me apasiona la tecnología, el desarrollo
+      web y las bases de datos, y estoy comprometido con seguir creciendo profesionalmente
+      en el área de la informática y el desarrollo de software.
     </p>
+    <div class="datos-personales">
+      <div class="dato"><span>🎂 Edad</span>24 años</div>
+      <div class="dato"><span>🎓 Carrera</span>Licenciatura en Informática</div>
+      <div class="dato"><span>🏫 Universidad</span>Universidad Modular Abierta · San Miguel</div>
+      <div class="dato"><span>🍜 Comida favorita</span>Comida China</div>
+    </div>
   </section>
 
   <section id="habilidades">
@@ -149,23 +189,3 @@
         de Programación II.</p>
       </div>
       <div class="proyecto">
-        <h3>🔐 Sesiones HTTP</h3>
-        <p>Investigación sobre los métodos para manejar sesiones web: Cookies, URL Rewriting
-        y Almacenamiento en Servidor.</p>
-      </div>
-    </div>
-  </section>
-
-  <section id="contacto" class="contacto">
-    <h2>Contacto</h2>
-    <p>📧 Correo: <a href="mailto:oscarefrain1409@gmail.com">oscarefrain1409@gmail.com</a></p>
-    <p>🐙 GitHub: <a href="https://github.com/14Oscar2026" target="_blank">github.com/14Oscar2026</a></p>
-    <p>🏫 Universidad Modular Abierta · Regional San Miguel</p>
-  </section>
-
-  <footer>
-    <p>© 2026 · Oscar Efraín Guzmán Álvarez · Desarrollado con HTML, CSS y GitHub Pages</p>
-  </footer>
-
-</body>
-</html>
